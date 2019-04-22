@@ -16,18 +16,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
-     
+    
           <!-- validation message to display after form is submitted -->
-             <!-- <?php /*echo validation_errors('<div class="alert alert-danger alert-dismissible" role="alert">
+             <?php echo validation_errors('<div class="alert alert-danger alert-dismissible" role="alert">
                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                     <span aria-hidden="true">&times;</span></button>','</div>');*/
-             ?>     -->
+                     <span aria-hidden="true">&times;</span></button>','</div>');
+             ?>    
              <!-- image upload form      -->
              <form action="<?php echo base_url();?>index.php/image/store" method="post" enctype="multipart/form-data">
-               <div class="form-group">
-                 <label>Image Name</label>
-                   <input type="text" class="form-control" id="image_name" name="name">
-                 </div>
                <div class="form-group">
                  <label>Image</label>
                    <input type="file" class="form-control" id="userfile" name="userfile">
